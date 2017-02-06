@@ -16,14 +16,12 @@ namespace LinearAlgebra
 
         protected int r, c; //r = rows, c = columns
         protected Fraction[][] entries; //r x c  2D array that holds all entries
-        //Change so that instead of 2D fraction, it is 1D vector!
-        //protected T[] rows; //can change to columns by transposing the matrix
 
         public Matrix() //the empty matrix
         {
             r = 0;
             c = 0;
-
+            entries = null;
         }
 
         public Matrix(int rows, int columns) //Generates a r x c matrix with default entries of 0.
